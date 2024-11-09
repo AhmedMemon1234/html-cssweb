@@ -97,3 +97,4 @@ async function preparePicnic() {
 preparePicnic();
 
 console.log("After picnic function");
+

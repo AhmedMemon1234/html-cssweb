@@ -13,6 +13,8 @@ let log = console.log; // save log method to variable
 // Combine styled and normal strings
 log(chalk.blue('Hello') + ' World' + chalk.red('!'));
 
+log(chalk.green.italic ("Ahmed Memon"))
+
 // Compose multiple styles using the chainable API
 log(chalk.blue.bgRed.bold('Hello world!'));
 log(chalk.green.bgMagenta.italic('Hello world!'));

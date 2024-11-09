@@ -7,6 +7,7 @@ console.log(chalk.yellow("Hello, World!", "How are you?"));
 let log = console.log; // save log method to variable
 // Combine styled and normal strings
 log(chalk.blue('Hello') + ' World' + chalk.red('!'));
+log(chalk.green.italic("Ahmed Memon"));
 // Compose multiple styles using the chainable API
 log(chalk.blue.bgRed.bold('Hello world!'));
 log(chalk.green.bgMagenta.italic('Hello world!'));
@@ -14,7 +15,3 @@ log(chalk.green.bgMagenta.italic('Hello world!'));
 log(chalk.blue('Hello', 'World!', 'Foo', 'bar', 'biz', 'baz'));
 // Nest styles
 log(chalk.red('Hello', chalk.underline.bgBlue('world') + '!'));
-function myLog(...args) {
-    log(chalk.green(...args));
-}
-myLog(2 + 2);

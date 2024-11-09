@@ -35,6 +35,7 @@ function loadCar_2() {
         }, 1000);
     });
 }
+// Invoke checkWeather_2() which returns a Promise so we can use .then()
 checkWeather_2()
     .then(prepareBurger)
     .then(packBags_3)
